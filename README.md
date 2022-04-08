@@ -14,6 +14,12 @@
 composer create-project laravel/laravel meu-site
 ```
 
+### Instalação e atualização das dependências
+```
+composer install
+composer update
+```
+
 ### Geração de uma nova chave da aplicação
 ```
 php artisan key:generate
