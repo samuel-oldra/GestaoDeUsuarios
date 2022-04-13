@@ -34,5 +34,6 @@ php artisan migrate:fresh    // recria todas as tabelas
 
 ### Seeders
 ```
-php artisan make:seeder UsersSeeder
+php artisan make:seeder UsersSeeder  // cria um seeder
+php artisan db:seed                  // executa o seeder
 ```
