@@ -13,6 +13,16 @@ class UserController extends Controller
         return view('users.index', compact('users'));
     }
 
+    public function create()
+    {
+        return view('users.create');
+    }
+
+    public function store()
+    {
+        dd('users.store');
+    }
+
     public function show($id)
     {
         if (!$user = User::find($id))
