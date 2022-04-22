@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreUpdateUserFormRequest;
 use App\Models\User;
-use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
@@ -46,11 +45,17 @@ class UserController extends Controller
         return redirect()->route('users.index');
     }
 
-    public function update(Request $request, $id)
+    public function update(StoreUpdateUserFormRequest $request, $id)
     {
         if (!$user = User::find($id))
             return redirect()->route('users.index');
 
-        dd($request->all());
+        $data = $request->only('name', 'email');
+        if ($request->password)
+            $data['password'] = bcrypt($request->password);
+
+        $user->update($data);
+
+        return redirect()->route('users.index');
     }
 }

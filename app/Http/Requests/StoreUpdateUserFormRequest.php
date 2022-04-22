@@ -23,7 +23,9 @@ class StoreUpdateUserFormRequest extends FormRequest
      */
     public function rules()
     {
-        return [
+        $id = $this->id ?? '';
+
+        $rules = [
             'name' => [
                 'required',
                 'string',
@@ -33,7 +35,8 @@ class StoreUpdateUserFormRequest extends FormRequest
             'email' => [
                 'required',
                 'email',
-                'unique:users',
+                // Verifica email único se for de ID diferente
+                "unique:users,email,{$id},id",
             ],
             'password' => [
                 'required',
@@ -41,5 +44,16 @@ class StoreUpdateUserFormRequest extends FormRequest
                 'max:15',
             ]
         ];
+
+        // Não validar senha na edição se não informada
+        if ($this->method('PUT')) {
+            $rules['password'] = [
+                'nullable',
+                'min:6',
+                'max:15',
+            ];
+        }
+
+        return $rules;
     }
 }
