@@ -46,7 +46,7 @@ class StoreUpdateUserFormRequest extends FormRequest
         ];
 
         // Não validar senha na edição se não informada
-        if ($this->method('PUT')) {
+        if ($this->method() == 'PUT') {
             $rules['password'] = [
                 'nullable',
                 'min:6',
