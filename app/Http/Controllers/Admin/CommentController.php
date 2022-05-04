@@ -39,6 +39,17 @@ class CommentController extends Controller
         return view('users.comments.create', compact('user'));
     }
 
+    public function edit($userId, $id)
+    {
+        if (!$comment = $this->comment->find($id)) {
+            return redirect()->back();
+        }
+
+        $user = $comment->user;
+
+        return view('users.comments.edit', compact('user', 'comment'));
+    }
+
     public function store(Request $request, $userId)
     {
         if (!$user = $this->user->find($userId)) {
@@ -51,5 +62,19 @@ class CommentController extends Controller
         ]);
 
         return redirect()->route('comments.index', $user->id);
+    }
+
+    public function update(Request $request, $id)
+    {
+        if (!$comment = $this->comment->find($id)) {
+            return redirect()->back();
+        }
+
+        $comment->update([
+            'body' => $request->body,
+            'visible' => isset($request->visible)
+        ]);
+
+        return redirect()->route('comments.index', $comment->user_id);
     }
 }
