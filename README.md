@@ -13,7 +13,7 @@
 - SQLite
 - Arquitetura MVC
 
-## Funcionalidade
+## Funcionalidades
 - Gestão de Usuários
 
 ###
