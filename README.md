@@ -15,6 +15,7 @@
 
 ## Funcionalidades
 - Gestão de Usuários
+- Gestão de Comentários do Usuário
 
 ###
 
