@@ -31,3 +31,8 @@ php artisan migrate          // cria as tabelas
 php artisan migrate:refresh  // recria as tabelas alteradas
 php artisan migrate:fresh    // recria todas as tabelas
 ```
+
+### Seeders
+```
+php artisan make:seeder UsersSeeder
+```
