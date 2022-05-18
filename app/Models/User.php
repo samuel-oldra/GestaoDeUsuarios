@@ -50,8 +50,8 @@ class User extends Authenticatable
                 $query->where('email', $search);
                 $query->orWhere('name', 'LIKE', "%{$search}%");
             }
-        })->with('comments')->paginate(4);
-        // 4 itens por página, default (vazio) é 15
+        })->with('comments')->paginate(3);
+        // 3 itens por página, default (vazio) é 15
 
         return $users;
     }

@@ -14,6 +14,7 @@
 - Arquitetura MVC
 
 ## Funcionalidades
+- Autenticação (breeze)
 - Gestão de Usuários
 - Gestão de Comentários do Usuário
 
