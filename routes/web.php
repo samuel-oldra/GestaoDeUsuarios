@@ -22,7 +22,8 @@ Route::middleware(['auth'])->group(function () {
 });
 
 Route::get('/', function () {
-    return view('welcome');
+    // return view('welcome');
+    return redirect("/users");
 });
 
 require __DIR__ . '/auth.php';
