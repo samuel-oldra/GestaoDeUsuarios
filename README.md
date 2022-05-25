@@ -36,6 +36,9 @@ composer create-project laravel/laravel meu-site
 ```
 composer install
 composer update
+npm install
+npm update
+npm run dev
 ```
 
 ### Geração de uma nova chave da aplicação
