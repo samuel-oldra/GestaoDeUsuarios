@@ -48,9 +48,9 @@ php artisan key:generate
 
 ### Migrations
 ```
-php artisan migrate          // cria as tabelas
-php artisan migrate:refresh  // recria as tabelas alteradas
-php artisan migrate:fresh    // recria todas as tabelas
+php artisan migrate                  // cria as tabelas
+php artisan migrate:refresh          // recria as tabelas alteradas
+php artisan migrate:fresh            // recria todas as tabelas
 ```
 
 ### Seeders
