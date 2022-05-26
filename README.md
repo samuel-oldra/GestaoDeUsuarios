@@ -7,6 +7,20 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## Tecnologias e práticas utilizadas
+- PHP 8.1
+- Laravel 9.x
+- SQLite
+- Arquitetura MVC
+
+## Funcionalidade
+- Gestão de Usuários
+
+###
+
+![alt text](https://raw.githubusercontent.com/samuel-oldra/Projeto-Laravel-9/main/README_IMGS/list_user.png)
+![alt text](https://raw.githubusercontent.com/samuel-oldra/Projeto-Laravel-9/main/README_IMGS/create_user.png)
+
 ## Comandos
 
 ### Criação do projeto
