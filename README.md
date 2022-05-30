@@ -57,11 +57,16 @@ npm run dev
 php artisan key:generate
 ```
 
-### Migrations
+### Make Model, Controller, Request e Migration 
 ```
-php artisan migrate                  // cria as tabelas
-php artisan migrate:refresh          // recria as tabelas alteradas
-php artisan migrate:fresh            // recria todas as tabelas
+php artisan make:model Comment -m
+
+php artisan make:controller UserController
+php artisan make:controller Admin\CommentController
+
+php artisan make:request StoreUpdateUserFormRequest
+
+php artisan make:migration add_nova_coluna --table=tabela_do_banco
 ```
 
 ### Seeders
@@ -70,12 +75,9 @@ php artisan make:seeder UsersSeeder  // cria um seeder
 php artisan db:seed                  // executa o seeder
 ```
 
-### Controllers
+### Migrations
 ```
-php artisan make:controller UserController
-```
-
-### Requests
-```
-php artisan make:request StoreUpdateUserFormRequest
+php artisan migrate                  // cria as tabelas
+php artisan migrate:refresh          // recria as tabelas alteradas
+php artisan migrate:fresh            // recria todas as tabelas
 ```
