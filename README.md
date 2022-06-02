@@ -20,6 +20,8 @@
 
 ![alt text](https://raw.githubusercontent.com/samuel-oldra/Projeto-Laravel-9/main/README_IMGS/list_user.png)
 ![alt text](https://raw.githubusercontent.com/samuel-oldra/Projeto-Laravel-9/main/README_IMGS/create_user.png)
+![alt text](https://raw.githubusercontent.com/samuel-oldra/Projeto-Laravel-9/main/README_IMGS/list_comment.png)
+![alt text](https://raw.githubusercontent.com/samuel-oldra/Projeto-Laravel-9/main/README_IMGS/create_comment.png)
 
 ## Comandos
 
