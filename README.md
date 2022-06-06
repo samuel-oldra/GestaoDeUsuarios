@@ -54,6 +54,11 @@ php artisan make:seeder UsersSeeder  // cria um seeder
 php artisan db:seed                  // executa o seeder
 ```
 
+### Controllers
+```
+php artisan make:controller UserController
+```
+
 ### Requests
 ```
 php artisan make:request StoreUpdateUserFormRequest
