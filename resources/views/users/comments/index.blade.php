@@ -52,4 +52,9 @@
         @endforeach
         </tbody>
     </table>
+    <br/>
+    <a href="{{ route('users.index') }}"
+       class="shadow bg-gray-500 hover:bg-gray-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded">
+        Voltar
+    </a>
 @endsection
