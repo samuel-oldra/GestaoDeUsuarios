@@ -12,8 +12,13 @@
         >
         Visível?
     </label>
+    <br/><br/>
     <button type="submit"
-            class="w-full shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded">
+            class="shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded">
         Enviar
     </button>
+    <a href="{{ route('comments.index', $user->id) }}"
+       class="shadow bg-gray-500 hover:bg-gray-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded">
+        Voltar
+    </a>
 </div>
